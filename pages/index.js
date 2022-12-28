@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import SearchBox  from '../components/SearchBox'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <main className='bg-red-300 h-screen'>
         <h1 className='text-5xl font-bold'>Welcome Good</h1>
+        <SearchBox /> 
       </main>
     </>
   )
